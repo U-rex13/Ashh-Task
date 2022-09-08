@@ -1,7 +1,6 @@
-import csv 
 def main():
     with open("password.txt","r") as file:
-        file_reader = csv.reader(file)
+        file_reader = file.read()
         user_info(file_reader)
         file.close() 
         
